@@ -1,0 +1,121 @@
+[gd_scene load_steps=5 format=3 uid="uid://ejdofjqtcsj"]
+
+[ext_resource type="Script" path="res://13_kabe_pon/kabe_pon.gd" id="1_0m8sg"]
+[ext_resource type="Texture2D" uid="uid://ceh7dtah8h4rm" path="res://00_resource/gobot.svg" id="2_rq1le"]
+[ext_resource type="Texture2D" uid="uid://p13ws5w1va6m" path="res://icon.svg" id="3_nttpb"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_p22gy"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="KabePon" type="Node2D"]
+script = ExtResource("1_0m8sg")
+
+[node name="WallL" type="TextureRect" parent="."]
+modulate = Color(1, 0.613548, 0.026491, 1)
+offset_left = -16.0
+offset_top = -251.0
+offset_right = 582.0
+offset_bottom = -35.0
+texture = ExtResource("2_rq1le")
+
+[node name="WallR" type="TextureRect" parent="."]
+modulate = Color(1, 0.613548, 0.026491, 1)
+offset_left = 578.0
+offset_top = -251.0
+offset_right = 1176.0
+offset_bottom = -35.0
+texture = ExtResource("2_rq1le")
+
+[node name="Player" type="Sprite2D" parent="."]
+position = Vector2(731, 576)
+scale = Vector2(0.355512, 0.355512)
+texture = ExtResource("3_nttpb")
+
+[node name="Title" type="Node2D" parent="."]
+
+[node name="Background" type="ColorRect" parent="Title"]
+custom_minimum_size = Vector2(1152, 648)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TitleLabel" type="Label" parent="Title"]
+offset_left = 210.0
+offset_top = 192.0
+offset_right = 984.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 100
+text = "レースでポン!"
+horizontal_alignment = 1
+
+[node name="InstructionLabel" type="Label" parent="Title"]
+offset_left = 256.0
+offset_top = 306.0
+offset_right = 925.0
+offset_bottom = 438.0
+theme_override_font_sizes/font_size = 41
+text = "あそびかた
+←プレイヤーはマウスでいどう
+← かべにあたったらおしまい"
+horizontal_alignment = 1
+
+[node name="StartButton" type="Button" parent="Title"]
+offset_left = 545.0
+offset_top = 519.0
+offset_right = 697.0
+offset_bottom = 569.0
+text = "すたーと"
+
+[node name="Gobot" type="TextureRect" parent="Title"]
+offset_left = 254.0
+offset_top = 352.0
+offset_right = 382.0
+offset_bottom = 480.0
+scale = Vector2(0.355512, 0.355512)
+texture = ExtResource("2_rq1le")
+
+[node name="Gobot2" type="TextureRect" parent="Title"]
+modulate = Color(1, 0.613548, 0.026491, 1)
+offset_left = 255.0
+offset_top = 407.0
+offset_right = 383.0
+offset_bottom = 535.0
+scale = Vector2(0.355512, 0.355512)
+texture = ExtResource("2_rq1le")
+
+[node name="Ending" type="Node2D" parent="."]
+visible = false
+
+[node name="OsimaiLabel" type="Label" parent="Ending"]
+offset_left = 332.0
+offset_top = 238.0
+offset_right = 896.0
+offset_bottom = 330.0
+theme_override_font_sizes/font_size = 91
+theme_override_styles/normal = SubResource("StyleBoxFlat_p22gy")
+text = "おしまい"
+horizontal_alignment = 1
+
+[node name="RetryButton" type="Button" parent="Ending"]
+offset_left = 545.0
+offset_top = 519.0
+offset_right = 697.0
+offset_bottom = 569.0
+text = "もういちど"
+
+[node name="Score" type="Label" parent="."]
+offset_left = 29.0
+offset_top = 12.0
+offset_right = 1126.0
+offset_bottom = 64.0
+theme_override_font_sizes/font_size = 51
+text = "0てん"
+horizontal_alignment = 1
+
+[connection signal="pressed" from="Title/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Ending/RetryButton" to="." method="_on_retry_button_pressed"]

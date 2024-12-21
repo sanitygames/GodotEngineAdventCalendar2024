@@ -1,0 +1,63 @@
+[gd_scene load_steps=4 format=3 uid="uid://qmxl0lpw6a6e"]
+
+[ext_resource type="Script" path="res://01_global_scenes/test.gd" id="1_jinet"]
+[ext_resource type="Texture2D" uid="uid://ceh7dtah8h4rm" path="res://00_resource/gobot.svg" id="2_flrdm"]
+
+[sub_resource type="SystemFont" id="SystemFont_rhhvd"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_jinet")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+visible = false
+offset_left = 31.0
+offset_top = 179.0
+offset_right = 71.0
+offset_bottom = 219.0
+color = Color(0, 1, 1, 1)
+
+[node name="ColorRect2" type="ColorRect" parent="."]
+visible = false
+offset_left = 203.0
+offset_top = 92.0
+offset_right = 243.0
+offset_bottom = 132.0
+color = Color(0.683333, 1, 0, 1)
+
+[node name="ColorRect3" type="ColorRect" parent="."]
+visible = false
+offset_left = 94.0
+offset_top = 137.0
+offset_right = 134.0
+offset_bottom = 177.0
+color = Color(0.24318, 0.135968, 0.666322, 1)
+
+[node name="ColorRect4" type="ColorRect" parent="."]
+visible = false
+offset_left = 23.0
+offset_top = 98.0
+offset_right = 63.0
+offset_bottom = 138.0
+color = Color(0.97497, 1, 0.125139, 1)
+
+[node name="ColorRect5" type="ColorRect" parent="."]
+visible = false
+offset_left = 188.0
+offset_top = 169.0
+offset_right = 228.0
+offset_bottom = 209.0
+color = Color(0.778335, 0, 0.621725, 1)
+
+[node name="Label" type="Label" parent="."]
+visible = false
+offset_left = 6.0
+offset_top = 10.0
+offset_right = 123.0
+offset_bottom = 54.0
+scale = Vector2(0.6, 0.6)
+theme_override_fonts/font = SubResource("SystemFont_rhhvd")
+
+[node name="Player" type="Sprite2D" parent="."]
+modulate = Color(1, 1, 1, 0.454902)
+position = Vector2(176, 125)
+texture = ExtResource("2_flrdm")

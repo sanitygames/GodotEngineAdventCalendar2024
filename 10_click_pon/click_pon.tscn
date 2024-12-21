@@ -1,0 +1,93 @@
+[gd_scene load_steps=4 format=3 uid="uid://cs1p83aid7kog"]
+
+[ext_resource type="Script" path="res://10_click_pon/click_pon.gd" id="1_l78ve"]
+[ext_resource type="Texture2D" uid="uid://ceh7dtah8h4rm" path="res://00_resource/gobot.svg" id="2_v0t8t"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l1pke"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="ClickPon" type="Node2D"]
+script = ExtResource("1_l78ve")
+
+[node name="Title" type="Node2D" parent="."]
+
+[node name="Background" type="ColorRect" parent="Title"]
+custom_minimum_size = Vector2(1152, 648)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TitleLabel" type="Label" parent="Title"]
+offset_left = 210.0
+offset_top = 192.0
+offset_right = 984.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 100
+text = "クリックでポン!"
+horizontal_alignment = 1
+
+[node name="InstructionLabel" type="Label" parent="Title"]
+offset_left = 378.0
+offset_top = 348.0
+offset_right = 820.0
+offset_bottom = 435.0
+theme_override_font_sizes/font_size = 41
+text = "あそびかた
+←マウスでクリックする"
+horizontal_alignment = 1
+
+[node name="StartButton" type="Button" parent="Title"]
+offset_left = 545.0
+offset_top = 519.0
+offset_right = 697.0
+offset_bottom = 569.0
+text = "すたーと"
+
+[node name="Gobot" type="TextureRect" parent="."]
+offset_left = 242.0
+offset_top = 357.0
+offset_right = 370.0
+offset_bottom = 485.0
+texture = ExtResource("2_v0t8t")
+
+[node name="Ending" type="Node2D" parent="."]
+visible = false
+
+[node name="OsimaiLabel" type="Label" parent="Ending"]
+offset_left = 332.0
+offset_top = 238.0
+offset_right = 896.0
+offset_bottom = 330.0
+theme_override_font_sizes/font_size = 91
+theme_override_styles/normal = SubResource("StyleBoxFlat_l1pke")
+text = "おしまい"
+horizontal_alignment = 1
+
+[node name="RetryButton" type="Button" parent="Ending"]
+offset_left = 545.0
+offset_top = 519.0
+offset_right = 697.0
+offset_bottom = 569.0
+text = "もういちど"
+
+[node name="Score" type="Label" parent="."]
+offset_left = 29.0
+offset_top = 12.0
+offset_right = 1126.0
+offset_bottom = 64.0
+theme_override_font_sizes/font_size = 51
+text = "あと30びょう 0てん"
+horizontal_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 30.0
+one_shot = true
+
+[connection signal="pressed" from="Title/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Ending/RetryButton" to="." method="_on_retry_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

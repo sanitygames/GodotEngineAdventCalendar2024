@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://byl6hdddlw7rw"]
+
+[ext_resource type="Script" path="res://20_logo_pon/logo_pon.gd" id="1_5ib5g"]
+[ext_resource type="Texture2D" uid="uid://puai41c8qski" path="res://00_resource/logo_small_monochrome_dark.png" id="2_vv0x2"]
+
+[node name="LogoPon" type="Node2D"]
+script = ExtResource("1_5ib5g")
+
+[node name="Logo" type="TextureRect" parent="."]
+offset_left = 154.0
+offset_top = 264.0
+offset_right = 500.0
+offset_bottom = 386.0
+texture = ExtResource("2_vv0x2")
+expand_mode = 1
+
+[node name="Title" type="Node2D" parent="."]
+
+[node name="Background" type="ColorRect" parent="Title"]
+custom_minimum_size = Vector2(1152, 648)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TitleLabel" type="Label" parent="Title"]
+offset_left = 210.0
+offset_top = 192.0
+offset_right = 984.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 100
+text = "ロゴでポン!"
+horizontal_alignment = 1
+
+[node name="InstructionLabel" type="Label" parent="Title"]
+offset_left = 378.0
+offset_top = 347.0
+offset_right = 820.0
+offset_bottom = 434.0
+theme_override_font_sizes/font_size = 41
+text = "あそびかた
+リラックスしましょう。
+(Hボタンで「もどる」けす)"
+horizontal_alignment = 1
+
+[node name="StartButton" type="Button" parent="Title"]
+offset_left = 527.0
+offset_top = 524.0
+offset_right = 679.0
+offset_bottom = 574.0
+text = "すたーと"
+
+[connection signal="pressed" from="Title/StartButton" to="." method="_on_start_button_pressed"]

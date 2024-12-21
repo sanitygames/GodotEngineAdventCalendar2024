@@ -1,0 +1,106 @@
+[gd_scene load_steps=3 format=3 uid="uid://bx38ho7xg6sgq"]
+
+[ext_resource type="Script" path="res://21_color_pon/color_pon.gd" id="1_tyjel"]
+[ext_resource type="Texture2D" uid="uid://nuubg2omo4ra" path="res://00_resource/icon_monochrome_dark.png" id="3_s0qyr"]
+
+[node name="ColorPon" type="Node2D"]
+script = ExtResource("1_tyjel")
+
+[node name="GobotMaster" type="TextureRect" parent="."]
+offset_left = 1191.0
+offset_top = 21.0
+offset_right = 1255.0
+offset_bottom = 85.0
+pivot_offset = Vector2(32, 32)
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("3_s0qyr")
+expand_mode = 2
+stretch_mode = 4
+
+[node name="Gobots" type="GridContainer" parent="."]
+offset_left = 348.0
+offset_top = 15.0
+offset_right = 948.0
+offset_bottom = 615.0
+columns = 14
+
+[node name="ColorName" type="Label" parent="."]
+offset_left = 30.0
+offset_top = 150.0
+offset_right = 354.0
+offset_bottom = 200.0
+theme_override_font_sizes/font_size = 26
+
+[node name="ColorCode" type="Label" parent="."]
+offset_left = 26.0
+offset_top = 223.0
+offset_right = 259.0
+offset_bottom = 275.0
+theme_override_font_sizes/font_size = 14
+
+[node name="HSVButton" type="Button" parent="."]
+offset_left = 56.0
+offset_top = 460.0
+offset_right = 169.0
+offset_bottom = 499.0
+text = "HSV"
+
+[node name="RGBButton" type="Button" parent="."]
+offset_left = 57.0
+offset_top = 510.0
+offset_right = 170.0
+offset_bottom = 549.0
+text = "RGB"
+
+[node name="NameButton" type="Button" parent="."]
+offset_left = 57.0
+offset_top = 560.0
+offset_right = 170.0
+offset_bottom = 599.0
+text = "name"
+
+[node name="Title" type="Node2D" parent="."]
+
+[node name="Background" type="ColorRect" parent="Title"]
+modulate = Color(0.454061, 0.571944, 0.337381, 1)
+custom_minimum_size = Vector2(1152, 648)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TitleLabel" type="Label" parent="Title"]
+offset_left = 210.0
+offset_top = 192.0
+offset_right = 984.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 100
+text = "カラーでポン!"
+horizontal_alignment = 1
+
+[node name="InstructionLabel" type="Label" parent="Title"]
+offset_left = 278.0
+offset_top = 347.0
+offset_right = 904.0
+offset_bottom = 434.0
+theme_override_font_sizes/font_size = 41
+text = "あそびかた
+ボタンでならびかえ"
+horizontal_alignment = 1
+
+[node name="StartButton" type="Button" parent="Title"]
+offset_left = 527.0
+offset_top = 524.0
+offset_right = 679.0
+offset_bottom = 574.0
+text = "すたーと"
+
+[connection signal="pressed" from="HSVButton" to="." method="_on_hsv_button_pressed"]
+[connection signal="pressed" from="RGBButton" to="." method="_on_rgb_button_pressed"]
+[connection signal="pressed" from="NameButton" to="." method="_on_name_button_pressed"]
+[connection signal="pressed" from="Title/StartButton" to="." method="_on_start_button_pressed"]

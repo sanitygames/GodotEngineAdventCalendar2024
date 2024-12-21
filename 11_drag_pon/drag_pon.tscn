@@ -1,0 +1,850 @@
+[gd_scene load_steps=5 format=3 uid="uid://hs1qgfdrtdnw"]
+
+[ext_resource type="Script" path="res://11_drag_pon/drag_pon.gd" id="1_n3vrt"]
+[ext_resource type="Texture2D" uid="uid://ceh7dtah8h4rm" path="res://00_resource/gobot.svg" id="2_7alqq"]
+[ext_resource type="Texture2D" uid="uid://p13ws5w1va6m" path="res://icon.svg" id="2_j2ilg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hj7wy"]
+bg_color = Color(0, 0, 0, 1)
+
+[node name="DragPon" type="Node2D"]
+script = ExtResource("1_n3vrt")
+
+[node name="Gobots" type="GridContainer" parent="."]
+z_index = -1
+offset_left = 20.0
+offset_top = 86.0
+offset_right = 1128.0
+offset_bottom = 613.0
+theme_override_constants/h_separation = 5
+theme_override_constants/v_separation = 5
+columns = 15
+
+[node name="Gobot1" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot2" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot3" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot4" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot5" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot6" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot7" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot8" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot9" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot10" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot11" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot12" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot13" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot14" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot15" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot16" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot17" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot18" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot19" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot20" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot21" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot22" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot23" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot24" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot25" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot26" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot27" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot28" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot29" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot30" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot31" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot32" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot33" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot34" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot35" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot36" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot37" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot38" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot39" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot40" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot41" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot42" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot43" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot44" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot45" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot46" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot47" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot48" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot49" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot50" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot51" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot52" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot53" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot54" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot55" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot56" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot57" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot58" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot59" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot60" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot61" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot62" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot63" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot64" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot65" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot66" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot67" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot68" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot69" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot70" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot71" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot72" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot73" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot74" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot75" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot76" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot77" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot78" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot79" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot80" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot81" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot82" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot83" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot84" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot85" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot86" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot87" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot88" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot89" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot90" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot91" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot92" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot93" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot94" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot95" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot96" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot97" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot98" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot99" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot100" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot101" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot102" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot103" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot104" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Gobot105" type="TextureRect" parent="Gobots"]
+layout_mode = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+texture = ExtResource("2_7alqq")
+expand_mode = 1
+
+[node name="Title" type="Node2D" parent="."]
+
+[node name="Background" type="ColorRect" parent="Title"]
+custom_minimum_size = Vector2(1152, 648)
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 1152.0
+offset_bottom = 648.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0, 0, 0, 1)
+
+[node name="TitleLabel" type="Label" parent="Title"]
+offset_left = 210.0
+offset_top = 192.0
+offset_right = 984.0
+offset_bottom = 293.0
+theme_override_font_sizes/font_size = 100
+text = "ドラッグでポン!"
+horizontal_alignment = 1
+
+[node name="InstructionLabel" type="Label" parent="Title"]
+offset_left = 194.0
+offset_top = 347.0
+offset_right = 1008.0
+offset_bottom = 479.0
+theme_override_font_sizes/font_size = 41
+text = "あそびかた
+←ひだりボタンドラッグでいっぱいつかまえる
+← これはつかまえたらダメ おしまい"
+horizontal_alignment = 1
+
+[node name="StartButton" type="Button" parent="Title"]
+offset_left = 545.0
+offset_top = 519.0
+offset_right = 697.0
+offset_bottom = 569.0
+text = "すたーと"
+
+[node name="Gobot" type="TextureRect" parent="Title"]
+offset_left = 139.0
+offset_top = 384.0
+offset_right = 267.0
+offset_bottom = 512.0
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("2_j2ilg")
+
+[node name="RedGobot" type="TextureRect" parent="Title"]
+self_modulate = Color(1, 0, 0, 1)
+offset_left = 138.0
+offset_top = 441.0
+offset_right = 266.0
+offset_bottom = 569.0
+scale = Vector2(0.36, 0.36)
+texture = ExtResource("2_j2ilg")
+
+[node name="Ending" type="Node2D" parent="."]
+visible = false
+
+[node name="OsimaiLabel" type="Label" parent="Ending"]
+offset_left = 332.0
+offset_top = 238.0
+offset_right = 896.0
+offset_bottom = 330.0
+theme_override_font_sizes/font_size = 91
+theme_override_styles/normal = SubResource("StyleBoxFlat_hj7wy")
+text = "おしまい"
+horizontal_alignment = 1
+
+[node name="RetryButton" type="Button" parent="Ending"]
+offset_left = 545.0
+offset_top = 519.0
+offset_right = 697.0
+offset_bottom = 569.0
+text = "もういちど"
+
+[node name="Score" type="Label" parent="."]
+offset_left = 29.0
+offset_top = 12.0
+offset_right = 1126.0
+offset_bottom = 64.0
+theme_override_font_sizes/font_size = 51
+text = "あと30びょう 0てん"
+horizontal_alignment = 1
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 30.0
+one_shot = true
+
+[connection signal="pressed" from="Title/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Ending/RetryButton" to="." method="_on_retry_button_pressed"]
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]
